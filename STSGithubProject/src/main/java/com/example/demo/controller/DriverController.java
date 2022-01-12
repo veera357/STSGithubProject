@@ -35,7 +35,7 @@ public class DriverController {
 		return driverService.getAllDriverDetails();
 	}
 		
-	@GetMapping("testDate")
+	@GetMapping("/testDate")
 	public List<DriverEntity> testDate(
 			@RequestParam("byDate") @DateTimeFormat(pattern = "yyyy-MM-dd") Date byDate) {
 		return driverService.getAllDriverDetailsByDate(byDate);
